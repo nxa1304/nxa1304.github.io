@@ -1,8 +1,173 @@
 <html>
     <head>
         <title>Hiệu sách Hộp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Crimson Pro', serif;
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            html {
+                font-size: 18px;
+            }
+            body {
+                width: 44rem;
+                margin: 1rem auto;
+            }
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h1 {
+                font-size: 1.2rem;
+                font-weight: normal;
+                font-style: italic;
+            }
+            .grid {
+                display: grid;
+                grid-gap: 0.6rem;
+                grid-template-columns: 1fr 4fr;
+                grid-template-rows: 2fr 4fr 1fr;
+            }
+            .item {
+                padding: 0.6rem;
+                background-color: WhiteSmoke;
+            }
+            #billboard {
+                display: grid;
+                grid-template-columns: 4fr 3fr;
+                grid-template-rows: 3fr 4fr;
+                grid-gap: 0.6rem;
+            }
+            .banner {
+                padding: 0.6rem;
+            }
+            .banner * {
+                font-size: 1.3rem;
+                font-weight: normal;
+                font-style: italic;
+            }
+            header {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+            }
+            #logo {
+                width: 6rem;
+                margin-bottom: 0.6rem;
+            }
+            h1 {
+                margin-bottom: 1rem;
+            }
+            #banner1 {
+                border: 1.5px solid SandyBrown;
+                color: SandyBrown;
+            }
+            #banner2 {
+                border: 1.5px solid mediumaquamarine;
+                color: mediumaquamarine;
+            }
+            #banner3 {
+                border: 1.5px solid rgb(64,64,64);
+                color: rgb(64,64,64);
+                grid-row: 1 / span 2;
+                grid-column: 2;
+            }
+            #browse {
+                display: flex;
+                flex-direction: column;
+            }
+            #browse a {
+                margin-top: 0.5rem;
+            }
+            #books {
+                grid-row: 2 / span 2;
+                grid-column: 2;
+            }
+            .cover {
+                height: 8rem;
+                margin: 0 1rem 0 0;
+                border: 1px solid gray;
+            }
+            .book {
+                display: flex;
+                margin: 1rem 1rem 2rem;
+            }
+            .book:last-of-type {
+                margin-bottom: 1rem;
+            }
+            h3 {
+                text-transform: uppercase;
+            }
+            #newsletter {
+            }
+        </style>
     </head>
     <body>
-        <h1>Hiệu sách Hộp</h1>
+        <div class="grid">
+            <header class="item">
+                <img id="logo" src="logo.jpg">
+                <h1>Hiệu sách Hộp</h1>
+                <a href="/gioithieu">Giới thiệu</a>
+                <a href="/thu">Liên hệ</a>
+            </header>
+            <div id="billboard">
+                <div id="banner1" class="banner">
+                    <h2>Sách mới tháng 8:<br>
+                    [Sách mới]</h2>
+                </div>
+                <div id="banner2" class="banner">
+                    <h2>Newsletter Tháng 8:<br>
+                    [Nội dung]</h2>
+                </div>
+                <div id="banner3" class="banner">
+                    <h2>THỜI ĐỘ xuất bản:<br>
+                    <span style="font-style: normal;">Hệ thống Mỹ thuật</span></h2>
+                </div>
+            </div>
+            <div id="browse" class="item">
+                <p><i>SÁCH:</i></p>
+                <a href="/tag/van">Văn học</a>
+                <a href="/tag/triet">Lịch sử</a>
+                <a href="/tag/triet">Triết học</a>
+            </div>
+            <div id="newsletter" class="item">
+                <a href="/newsletter">Newsletter</a>
+            </div>
+            <div id="books" class="item">
+                <p><i>SÁCH MỚI:</i></p>
+                <div class="book">
+                    <img class="cover" src="book1.jpg">
+                    <div>
+                        <h3>Hệ thống Mỹ thuật</h3>
+                        <p>Alain in his <i>Système des beaux-arts</i> (1920, revised 1926; “System of the Fine Arts”), a work that is distinguished by its detailed attention to dress, fashion, manners, and the useful arts, and by its idea of the artist as <i>artisan d’abord</i>.</p>
+                        <a href="/htmt">Đọc tiếp</a>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="cover" src="book2.jpg">
+                    <div>
+                        <h3>Sinh lý học phê bình</h3>
+                        <p>Albert Thibaudet (1874-1936 ) was the most important literary critic of the interwar period, on the model of Sainte-Beuve and especially of Montaigne, "father of the critical spirit".</p>
+                        <a href="/slhpb">Đọc tiếp</a>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="cover" src="book3.jpg">
+                    <div>
+                        <h3>Aurelia</h3>
+                        <p>Aurelia is French poet and novelist Gerard de Nerval's account of his descent into madness--a condition provoked in part by his unrequited passion for an actress named Jenny Colon.</p>
+                        <a href="/aurelia">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
