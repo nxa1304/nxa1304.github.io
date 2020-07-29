@@ -1,0 +1,124 @@
+* {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    width: 42rem;
+    margin: 1.5rem auto;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    padding-left: 2rem;
+}
+li {
+    margin-bottom: 0.4rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+h1 a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+.grid {
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 14rem auto 6rem 4rem;
+}
+.item {
+    padding: 0.6rem;
+    background-color: WhiteSmoke;
+}
+#billboard {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 3fr 4fr;
+    grid-gap: 0.6rem;
+}
+.banner {
+    padding: 0.6rem;
+}
+.banner * {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: italic;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+#logo {
+    width: 6rem;
+    margin-bottom: 0.6rem;
+}
+#banner1 {
+    border: 1.5px solid SandyBrown;
+    color: SandyBrown;
+}
+#banner2 {
+    border: 1.5px solid mediumaquamarine;
+    color: mediumaquamarine;
+}
+#banner3 {
+    border: 1.5px solid rgb(64,64,64);
+    color: rgb(64,64,64);
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+#browse {
+    min-height: 28rem;
+    display: flex;
+    flex-direction: column;
+}
+#browse a {
+    margin-top: 0.5rem;
+}
+#books {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+}
+.cover {
+    height: 8rem;
+    margin: 0 1rem 0 0;
+    border: 1px solid gray;
+}
+.book {
+    display: flex;
+    margin: 1rem 1rem 2rem;
+}
+h3 {
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+p {
+    margin-bottom: 0.4rem;
+}
+footer {
+    grid-column: 1 / span 2;
+    border: 0.6rem solid whitesmoke;
+}
+.article {
+    margin: 1rem;
+}
+.article img {
+    max-height: 20rem;
+    display: block;
+    margin: 0 auto 1rem;
+    border: 1px solid gray;
+}
